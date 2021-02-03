@@ -76,3 +76,24 @@ esac
 
 echo "Salary Of Employee= "$salary  
 
+
+
+
+#Calculate Wages till a condition of total working hours or days is reached for a month
+
+
+empHrs=100;
+totalSalary=0;
+empRatePerHr=20;
+numWorkingDays=20;
+
+for(( day=1; day<=$numWorkingDays; day++ ))
+do
+        salary=$(( $empHrs*$empRatePerHr ))
+        totalSalary=$(( $totalSalary+$salary ))
+done
+echo  "Salary of an Employee" $totalSalary
+
+
+
+
