@@ -79,7 +79,7 @@ echo "Salary Of Employee= "$salary
 
 
 
-<<<<<<< HEAD
+
 #Calculate Wages till a condition of total working hours or days is reached for a month
 
 
@@ -135,4 +135,4 @@ do
 totalSalary=$(($totalWorkHours*$EMP_RATE_PER_HR));
 
 echo "salary of an Employee= "$totalSalary
->>>>>>> Calculating_Wages_For_Month_UC
+
