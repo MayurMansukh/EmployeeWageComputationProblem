@@ -1,22 +1,28 @@
 #! /bin/bash -x
 
-#Add Part time Employee & Wage
+#Solving using Switch Case Statement
 
 
-echo "Welcome to Employee Wage Computation"
+isPartTime=1
+isFullTime=2
+empRatePerHr=20
+empCheck=$((RANDOM%3))
 
-Employee present or not
+case $empCheck in
+          $isFullTime)
+                    empHrs=8
+                        ;;
+                  $isPartTime)
+                        empHrs=4
+                            ;;
+               *)
+               empHrs=0
+                   ;;
+esac
 
-isPresent=1;
-randomCheck=$((RANDOM%2))
+  salary=$(($empHrs*$empRatePerHr)) 
 
-if [ $isPresent -eq $randomCheck ]
-then 
-         empRatePerHr=20;
-         empHrs=8;
-         salary=$(( $empHrs*$empRatePerHr )) 
-   else
-      salary=0;
-fi
-echo "Daily Wage of an Employee= " $salary
+echo "Salary Of Employee= "$salary  
+
+
 
