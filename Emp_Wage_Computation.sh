@@ -1,6 +1,11 @@
 #! /bin/bash -x
 
-#Calculate Daily Employee Wage
+#Add Part time Employee & Wage
+
+
+echo "Welcome to Employee Wage Computation"
+
+Employee present or not
 
 isPresent=1;
 randomCheck=$((RANDOM%2))
@@ -14,3 +19,4 @@ then
       salary=0;
 fi
 echo "Daily Wage of an Employee= " $salary
+
